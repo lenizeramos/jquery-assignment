@@ -4,9 +4,85 @@
   box-sizing: border-box;
 }
 
-.post {
+body,
+html {
+  width: 95vw;
+  margin: 0 auto;
+  text-align: justify;
+}
+body .post,
+html .post {
   border: 2px black solid;
-  margin: 0.5rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+body .toggleCommentsButton,
+html .toggleCommentsButton {
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+body .toggleCommentsButton:hover,
+html .toggleCommentsButton:hover {
+  background-color: white;
+  color: black;
+}
+body .comments,
+html .comments {
+  border: 2px black solid;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  word-wrap: break-word;
+  color: black;
+}
+body .addCommentButton,
+html .addCommentButton {
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+body .addCommentButton:hover,
+html .addCommentButton:hover {
+  background-color: white;
+  color: black;
+}
+body textarea,
+html textarea {
+  width: 100%;
+  resize: none;
+}
+body .displayNone,
+html .displayNone {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  body,
+  html {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body,
+  html {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body,
+  html {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body,
+  html {
+    width: 50vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
